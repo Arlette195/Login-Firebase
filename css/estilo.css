@@ -1,0 +1,118 @@
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-app.js"></script>
+
+
+
+#encabezado{
+	margin-top: 63px;
+	margin-bottom: 25px;
+	width: 100%;
+}
+
+section{
+	text-align: center;
+}
+ul{
+	text-align: left;
+	padding-left: 123px;
+}
+
+li{
+	margin-bottom: 2px;
+}
+h3{
+	font-size: 22px;
+	color: #de0681;
+	margin-bottom: 23px;
+}
+
+#inicio_sesion{
+	width: 63%;
+    margin-left: 21%;
+}
+input{
+	width: 78%;
+    height: 40px;
+    
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #de0698;
+    padding-left: 40px;
+}
+
+#btn-inicia{
+	width: 78%;
+    height: 35px;
+    margin-bottom: 14px;
+    border-radius: unset;
+    background-color: #de0698;
+    border-color: #de0698;
+}
+
+a:focus, a:hover{
+	color: #555;
+}
+
+#crear{
+	width: 63%;
+    height: 35px;
+    margin-bottom: 14px;
+    border-radius: unset;
+    background-color: #de0698;
+    border-color: #de0698;
+    margin-left: 81px;
+    margin-top: 28px;
+    margin-bottom: 0px;
+}
+
+
+#btn-registra{
+	width: 78%;
+    height: 35px;
+    margin-bottom: 14px;
+    border-radius: unset;
+    background-color: #de0698;
+    border-color: #de0698;
+}
+
+#secc-registro{
+	display: none;
+}
+
+.sobre{
+	position: absolute;
+    padding: 11px;
+    font-size: 19px;
+    color: #de0698;
+}
+
+.candado{
+    position: absolute;
+    padding-top: 8px;
+    padding-left: 14px;
+    font-size: 22px;
+    color: #de0698;
+}
+
+.error-pass2{
+    margin-left: -30px;
+    font-size: 15px;
+    margin-top: 7px;
+    color: green;
+    display: none;
+}
+
+
+h1{
+	font-size: 22px;
+	color: #de0681;
+}
+
+#btn-cerrar{
+	
+    height: 35px;
+    border-radius: unset;
+    background-color: #de0698;
+    border-color: #de0698;
+}
+
+

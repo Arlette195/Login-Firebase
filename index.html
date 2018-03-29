@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+	<html lan="en">
+	<head>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Login-Firebase</title>
+		<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/estilo.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="encabezado">
+			<img class="img-responsive" src="img/img_login.jpg">
+		</div>
+
+		<section id="secc-registro">
+			<div class="col-md-6 col-md-offset-3">
+				<h3><strong>Registrarse</strong></h3>
+				<form id="registro_nuevo">
+					<div>
+						<i class="fa fa-envelope-o sobre" aria-hidden="true"></i>
+						<input type="email" placeholder="correo@ejemplo.com" id="correo-registro">
+						<label style="color: red; display: none" id="error-correo">*Formato de correo incorrecto</label>
+					</div>
+					
+					<br>
+					<div>
+						<i class="fa fa-lock candado" aria-hidden="true"></i>
+						<input type="password" id="pass1-registro" placeholder="*Contraseña">
+						<label style="color: red" id="error-pass1"></label>
+					</div>
+					
+						<br>
+					<div>
+						<i class="fa fa-lock candado" aria-hidden="true"></i>
+						<input type="password" id="pass2-registro" placeholder="*Confirmar ontraseña">
+						<i class="fa fa-check error-pass2" id="succ" aria-hidden="true"></i>
+						<i class="fa fa-times error-pass2" id="err" style="color: red" aria-hidden="true"></i>
+						
+
+					</div>
+						<label style="color: red; display: none" id="error-datos">Datos Incompletos</label>
+						<br>
+						<button type="button" class="btn btn-primary" id="btn-registra">REGISTRARSE</button>
+						<br>
+					</form>
+			</div>
+		</section>
+
+		<section id="secc-inicio">
+			<div class="col-md-6" id="iniciar_sesion">
+				<h3><strong>Iniciar sesión</strong></h3>
+				<form id="inicio_sesion">
+					<div>
+						<i class="fa fa-envelope-o sobre" aria-hidden="true"></i>
+						<input type="email" id="correo-inicio" placeholder="correo@ejemplo.com">
+						<label style="color: red; display: none" id="err-inicio">*Formato de correo inválido</label>
+					</div>
+					
+					<br>
+					<div>
+						<i class="fa fa-lock candado" aria-hidden="true"></i>
+						<input type="password" id="pass-inicio" placeholder="*Contraseña">
+						<label style="color: red; display: none" id="passerr-inicio">*Esnecesario llenar este campo</label>
+					</div>
+					
+					<br>
+					<label style="color: red; display:none" id="datos-inicio">*Correo o contraseña inválido</label>
+					<br>
+					<button type="button" class="btn btn-primary" id="btn-inicia">INICIAR SESIÓN</button>
+					<br>
+					<a href="">¿Olvidaste tu contraseña?</a>
+				</form>
+			</div>
+			<div class="col-md-6" id="crear_cuenta">
+				<h3><strong>Crear cuenta</strong></h3>
+				<ul>
+					<li>Abre una cuenta de forma gratuita.</li>
+					<li>Tenemos 120 sucursales en 10 estados diferentes a tu disposición</li>
+					<li>Tú eliges dónde entrar</li>
+					<li>Puedes darte de baja cuando quieras</li>	
+				</ul>
+				<button type="button" id="crear" class="btn btn-primary">CREAR CUENTA</button>
+			</div>
+		</section>
+		<section id="panel" style="display: none">
+			<h1> Panel de Administración</h1>
+			<button id="btn-cerrar" class="btn btn-primary" type="button">Cerrar Sesión</button>
+		</section>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+	</body>
+	</html>	
